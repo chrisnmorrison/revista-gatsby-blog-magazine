@@ -13,9 +13,7 @@ popular: false
 #   - ./images/3.png
 ---
 
-Article Body Goes Here
-
-This file will contain various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
+This file contains various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
 
 ## Markdown Guide
 
@@ -129,7 +127,6 @@ IMPORTANT: If you don't see any styling here, we haven't decided on blockquote s
 
 - Create a list by starting a line with `+`, `-`, or `*`
 - Very easy!
- 
 
 #### Ordered
 
@@ -147,7 +144,7 @@ IMPORTANT: If you don't see any styling here, we haven't decided on blockquote s
 
 - Create a list by starting a line with `+`, `-`, or `*`
 - Very easy!
- 
+
 
 #### Ordered
 
@@ -165,7 +162,7 @@ IMPORTANT: If you don't see any styling here, we haven't decided on blockquote s
 
 Inline `code`
 
-Block code "fences" 
+Block code "fences"
 
 ```
 Sample text here...
@@ -175,7 +172,7 @@ Can span multi lines
 ````
 Inline `code`
 
-Block code "fences" 
+Block code "fences"
 
 ```
 Sample text here...
@@ -183,58 +180,8 @@ Can span multi lines
 ```
 ````
 
-At the moment we have not implemented syntax highlighting, since there won't be many code blocks on the site. Except for Markdown!
+At the moment, we have not implemented syntax highlighting. We recommend either prismjs or highlightjs if you'd like to add highlighting!
 
 ## Tables
 
-Currently, we do not use HTML tables, however we may implement styling for this is there is a use-case in the future.
-
-### Footnotes
-
-Footnote 1 link[^1].
-
-Footnote 2 link[^2].
-
-Duplicated footnote reference[^2].
-
-**Footnotes will appear at bottom of this page.**
-
-[^1]: Footnote **can have markdown**
-
-    and multiple paragraphs.
-
-[^2]: Footnote text.
-
-```markdown
-Footnote 1 link[^1].
-
-Footnote 2 link[^2].
-
-Duplicated footnote reference[^2].
-
-**Footnotes will appear at bottom**
-
-[^1]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^2]: Footnote text.
-```
-
-### Figcaptions
-
-Markdown does not natively support figcaptions (at least not at the time of writing this). It's worth noting that you can write HTML directly in Markdown files, but we've found a way to simplify this process.
-
-Instead of using figcaptions to caption images, we'll be using a little shortcut [found on Stack Overflow](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll). Simply place the image using markdown (as shown earlier), then place italicized text after using `*write caption here*` with the caption inside of it. When compiled to HTML, this will place `<em>` tags around the text, and using a CSS rule `img + em { }`, we turn this into a caption. For example,
-
-![Features of Java](./images/html-2.png 'The Tea Company')
-_Image from https://techvidvan.com/tutorials/java-introduction/_
-
-```markdown
-![Features of Java](./images/html-2.png 'The Tea Company')
-_Image from https://techvidvan.com/tutorials/java-introduction/_
-```
-
-### See the footnotes below?
-
-Remember when we wrote footnotes earlier? They automatically appear at the bottom! ⬇️
+Currently, we do not use HTML tables, however we may implement styling for this if there is a use-case in the future.

@@ -13,42 +13,16 @@ const AboutUs = () => {
               <AiOutlineRead className="icon" />
               <h3>Humble Beginnings</h3>
               <p>
-                It started with a simple question: how can one raise money for
-                charity, without actually donating money?
-              </p>
-              <p>
-                The first idea was a free text-based course website that donates
-                the majority if it's revenue to charity (hint:{' '}
-                <a
-                  href="https://openmastery.one"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  Open Mastery
-                </a>
-                ), and soon after, an even simpler idea appeared. How about an
-                incredibly simple site for writers to promote their favourite
-                educational resources?
-              </p>
-              <p>
-                Revista(ucation) was born from that idea. Completely open
-                source, Revista is a platform for passionate people to share
-                knowledge.
+              Flannel fixie tilde gastropub actually. La croix everyday carry hot chicken shaman snackwave. Godard art party hexagon hot chicken franzen woke. 8-bit VHS hoodie heirloom, YOLO poutine scenester cloud bread kombucha next level truffaut mustache bruh polaroid kale chips. Small batch PBR&B trust fund ethical before they sold out. Master cleanse sustainable locavore vinyl prism squid single-origin coffee.
               </p>
             </div>
           </div>
           <div className="col-lg-5">
             <div className="about-card">
               <AiOutlineDeploymentUnit className="icon" />
-              <h3>Easier Access to Learning</h3>
+              <h3>Access to Resources</h3>
               <p>
-                Teaching is rewarding, and the world always needs more teachers.
-                What if you want to teach yourself, and you're overwhelmed by
-                the available options?
-              </p>
-              <p>
-                Revista seeks to demystify free education by finding the best
-                free educational resources for you.
+              Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
               </p>
             </div>
           </div>

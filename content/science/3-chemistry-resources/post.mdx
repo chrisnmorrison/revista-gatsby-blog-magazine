@@ -9,49 +9,175 @@ topPick: false
 popular: false
 ---
 
-Chemistry is the study of matter and the changes it undergoes. It is a fascinating and important subject, but it can also be challenging to learn. If you are looking to improve your understanding of chemistry or just want to learn more about it, there are many resources available online that can help. 
+This file contains various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
 
-Here are the top three resources to learn chemistry for free online:
+## Markdown Guide
 
-### 1. [Khan Academy](https://www.khanacademy.org/science/ap-chemistry-beta)
+# h1 Heading
 
-Khan Academy is a non-profit organization that provides free, high-quality educational resources to students around the world. Their chemistry lessons cover topics from basic chemical concepts to advanced topics such as thermodynamics and organic chemistry. They offer a variety of resources, including videos, interactive exercises, and practice problems.
+## h2 Heading
 
-- **Price**: Free
-- **Paid Option** : No
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+### h3 Heading
 
-**Who should take this course?** This is a good option for complete beginners who want to prepare for high school or university-level courses.
+#### h4 Heading
 
-Link to the course - [Crash Course Biology](https://www.youtube.com/watch?v=QnQe0xW_JY4&list=PL3EED4C1D684D3ADF)
+##### h5 Heading
 
-### 2. [Learn with Dr. Scott](https://learnwithdrscott.com/course/free-basic-chemistry/)
+###### h6 Heading
+
+```
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+```
+
+## Horizontal Rules
+
+---
+
+---
+
+---
+
+```
+___
+
+---
+
+***
+```
+
+## Links
+
+[Link Text](http://dev.nodeca.com)
+
+[Link with Title](http://nodeca.github.io/pica/demo/ 'Title Text!')
+
+```
+[Link Text](http://dev.nodeca.com)
+
+[Link with Title](http://nodeca.github.io/pica/demo/ "Title Text!")
+```
+
+## Images
+
+Images are easy to use in Markdown.
+
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg 'The Stormtroopocat')
+![Alt text goes here](./images/html-2.png)
+
+```
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Alt text goes here](./images/html-2.png)
+
+```
+
+Note that although possible with special configuration, you currently cannot modify the size of in-article images. The current max width is 650px. Please size image files accordingly for the fastest build times!
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+```
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
+
+## Blockquotes
+
+IMPORTANT: If you don't see any styling here, we haven't decided on blockquote styling yet :)
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+```
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+>>> ...or with spaces between arrows.
+```
+
+## Lists
+
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+
+```
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
 
 
-- **Price**: Free
-- **Paid Option** : No
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+#### Ordered
 
-**Who should take this course?** This is a good option for beginners who want to understand the major ideas in Biology.
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
 
-Link to the course - [Concepts of Biology](https://openstax.org/details/books/concepts-biology)
+###### Start numbering with offset:
 
-### 3. [General Chemistry I: Atoms, Molecules, and Bonding](https://www.edx.org/course/atoms-molecules-and-bonding) - EdX
+158. foo
+159. bar
+```
 
-edX is an online learning platform that offers a wide range of courses on various subjects, including chemistry. They have courses on topics such as general chemistry, organic chemistry, and biochemistry. Many of their courses are offered by top universities and institutions and are often taught by experienced professors. Some courses may require a fee to access, but many are available for free.
+## Code
 
-- **Price**: Free
-- **Paid Option** : Yes
-- **What the paid option offers**: Certificate of completion and graded assignments
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+Inline `code`
 
-**Who should use this resource?** While EdX does provide general classes on Biology, their resources on more specific subdisciplies are top-notch. We highly recommend learning general Biology until you find what interests you most, and see if EdX has a class on it!
+Block code "fences"
 
-Link to the course - [Various Biology Courses](https://www.edx.org/learn/biology)
+```
+Sample text here...
+Can span multi lines
+```
 
-### Final Thoughts
+````
+Inline `code`
 
-These are just a few of the many resources available online for learning chemistry. Whether you are a student looking to improve your understanding of the subject or just someone who is curious about chemistry, these resources can help you learn more about this fascinating and important field.
+Block code "fences"
+
+```
+Sample text here...
+Can span multi lines
+```
+````
+
+At the moment, we have not implemented syntax highlighting. We recommend either prismjs or highlightjs if you'd like to add highlighting!
+
+## Tables
+
+Currently, we do not use HTML tables, however we may implement styling for this if there is a use-case in the future.

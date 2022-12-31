@@ -1,7 +1,7 @@
 import React from 'react'
 import SocialLinks from '../constants/socialLinks'
 import styled from 'styled-components'
-import logo from '../assets/logo-small.png'
+import logo from '../assets/logo.png'
 import { Link } from 'gatsby'
 const Footer = () => {
   return (

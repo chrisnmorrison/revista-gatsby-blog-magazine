@@ -10,7 +10,7 @@ const Vision = () => {
             <div className="grid-item grid-item-title">
               {' '}
               <div className="title">
-                <h2>Committed to Free Education</h2>
+                <h2>Committed to Hipsum</h2>
               </div>
             </div>
 
@@ -19,16 +19,10 @@ const Vision = () => {
               <div className="vision container">
                 <h3>Vision</h3>
                 <p>
-                  Sharing information has never been so easy and accessible. We
-                  envision a world where both paid education and free
-                  educational resources online are equally as valuable.
+                Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
                 </p>
                 <p>
-                  Quite simply, Revista is our way of making free education easy
-                  to find. Our articles link to a ton of free resources on a
-                  growing number of topics. These are perfect for students
-                  looking for free supplemental material, or anyone with a
-                  lifelong passion for learning!
+                Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
                 </p>
               </div>
             </div>
@@ -38,16 +32,10 @@ const Vision = () => {
               <div className="mission container">
                 <h3>Mission</h3>
                 <p>
-                  We value free online learning, and we want everyone to share
-                  our values. Free learning allows everyone to educate
-                  themselves, to improve their decision making ability, and
-                  empowers many to seek knowledge that may have been harder to
-                  access in the past.
+                Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
                 </p>
                 <p>
-                  We're showing the world that free online learning is a good
-                  thing, and we're facilitating lifelong learners to empower
-                  themselves.
+                Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
                 </p>
               </div>
             </div>

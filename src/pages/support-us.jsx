@@ -27,7 +27,7 @@ const Support = () => {
               <p>
                 We are also an{' '}
                 <a
-                  href="https://github.com/chrisnmorrison/openeducation"
+                  href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -62,11 +62,11 @@ const Support = () => {
                     your donations go to maintaining Revista, as well as the
                     other education promoting services that Chris created, like{' '}
                     <a
-                      href="https://openmastery.one"
+                      href="https://opened.one"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Open Mastery
+                      Open Ed
                     </a>
                     .
                   </p>
@@ -97,16 +97,25 @@ const Support = () => {
                   </a>
                 </div>
                 <div>
-                  <h2 className="support-title">Write for us</h2>
+                  <h2 className="support-title">Improve & Enhance our Code</h2>
                   <p>
-                    Our mission is to create a huge catalog of links to
-                    educational resources, and this is only possible with
-                    support from knowledgeable people! We're always looking for
-                    writers to create and edit articles.
+                    Revista is an open-source blog/magazine template, and is
+                    ready for you to add your articles! If you'd like to help us
+                    improve, feel free to open an issue, or check out the
+                    currently open issues on Github. We use Markdown, GraphQL,
+                    Gatsby, and React, so if you know any of those, it's easy to
+                    contribute!
+                  </p>
+                  <p>
+                    Don't forget to{' '}
+                    <a href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine">
+                      star me on Github
+                    </a>
+                    !
                   </p>
                   <a
                     className="support-link"
-                    href="https://github.com/chrisnmorrison/openeducation/blob/main/CONTRIBUTING.md"
+                    href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/blob/main/CONTRIBUTING.md"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -139,9 +148,8 @@ const Support = () => {
         <div className="blockquote-wrapper">
           <div className="blockquote">
             <h3>
-              Revista promotes free education, and therefore, Revistaucation
-              will remain free forever. Thank you to all of our supporters and
-              maintainers!
+              Revista will remain free forever. Thank you to all of our
+              supporters and maintainers!
               <br aria-hidden="true" />
               <br aria-hidden="true" />
               Best of all, Revista is completely open source! Anyone can
@@ -150,10 +158,10 @@ const Support = () => {
               create amazing, meaningful online services.
             </h3>
             <h4>
-              &mdash; Chris Morrison
+              &mdash; <strong>Chris Morrison</strong>
               <br aria-hidden="true" />
               <em>
-                Founder: Open Mastery &amp;{' '}
+                Creator of Revista &amp; owner of <br aria-hidden="true" />
                 <a
                   href="https://mesmerdesign.ca"
                   className="support-link"

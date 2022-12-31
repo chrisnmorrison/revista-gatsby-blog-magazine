@@ -9,67 +9,175 @@ topPick: false
 popular: false
 ---
 
-We all love art, but many of us struggle to draw more than stick figures and three legged creatures that somewhat resemble a dog.
+This file contains various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
 
-The good news is, art is a skill rather than an innate talent. Great artists started with stick figures as well, and with hundreds/thousands of hours of practice, they gradually built their skills through patient practice. With the power of the internet, free learning has never been so accessible. There are so, so many art resources out there, both free and paid, and some of them even start at stick figures! There's no better way to learn than starting at bare foundations and slowly trying harder techniques.
+## Markdown Guide
 
-Learning how the best artists use line, shape, color, texture and space to create amazing scenes and environments takes time, and of course, effort. Art is a conscious action, and even the best artists can't simply 'draw from their imagination'. They start with a rough sketch, and gradually add details. At least, this is a common digital art workflow. Even the best minds in art start with sketches, so the following resources will help you learn the fundamentals before progressing into digital art, painting, or your desired art style.
+# h1 Heading
 
-### 1. [Draw a Box](https://drawabox.com/)
+## h2 Heading
 
-Draw a Box is a huge player in realm of free art tutorials, and we are confident that they deserve the top spot. Funded by Patreon and sponsors, Draw a Box is completely free. You'll start learning the absolute basics of pencil drawing, and gradually progress to more advanced topics, again, completely free.
+### h3 Heading
 
-Draw a Box has always been a favourite in the online art world, for a good reason. For absolute beginners, we highly recommend trying them out!
+#### h4 Heading
 
-- **Price**: Free
-- **Paid Option** : No
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+##### h5 Heading
 
-**Who should take this course?** This is a good option for complete beginners who want to gain foundational sketching skills, who like a clear learning path, and who aren't afraid of challenges.
+###### h6 Heading
 
-Link to the course - [Draw a Box](https://drawabox.com/)
+```
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+```
 
-### 2. [Drawing Tutorials Online](https://www.youtube.com/c/DrawingTutorialsOnline/playlists) - Youtube
+## Horizontal Rules
 
-Drawing Tutorials Online offers a vast amount of content on many common art foundational skills, such as portrait and figure drawing. Almost all of their videos teach sketching rather than other forms of art. For a beginner, this is perfect. Sketching is the foundation of almost all other art styles, and this channel offers plenty of content. Additionally, they also offer advice on making money from art, which some may be interested in. You can also find archived livestreams of full sketching projects.
+---
 
-The link goes to their channel's playlists, which we recommend you start at. Depending on your level and interests, you may want to start at the fundamental tutorial playlist, or check out their figure sketching playlist.
+---
 
-- **Price**: Free
-- **Paid Option** : Yes
-- **Difficulty Level**: Beginner to Intermediate
-- **Flexible schedule**: Yes
+---
 
-**Who should take this course?** This is a good option for those who like learning on Youtube, and for those interested in learning figure and portrait sketching in addition to fundamental art skills.
+```
+___
 
-Link to the course - [Drawing Tutorials Online](https://www.youtube.com/c/DrawingTutorialsOnline/playlists)
+---
 
-### 3. [SchaeferArt](https://www.youtube.com/c/SchaeferArt) - Youtube
+***
+```
 
-SchaeferArt is one of the bigger names in Youtube art. With a vast amount of content ranging from beginner to intermediate (and even some advanced tutorials), we easily consider SchaeferArt one of the best art creators on Youtube.
+## Links
 
-In addition to hands-on tutorials, they offer additional content that any aspiring artist should watch:
+[Link Text](http://dev.nodeca.com)
 
-1. How to develop an art mindset
-2. Color theory for artists
+[Link with Title](http://nodeca.github.io/pica/demo/ 'Title Text!')
 
-Best of all, this is on Youtube and completely free. Many paid resources don't have this quantity and quality of material, so we wholeheartedly recommend SchaeferArt! While they do offer beginner material, much of the content is for artists who already have some practice under their belt, and want to get their hands dirty with more advanced concepts and techniques.
+```
+[Link Text](http://dev.nodeca.com)
 
-- **Price**: Free
-- **Paid Option** : Yes
-- **Difficulty Level**: Beginner to Intermediate
-- **Flexible schedule**: Yes
+[Link with Title](http://nodeca.github.io/pica/demo/ "Title Text!")
+```
 
-**Who should take this course?** This is a good option for beginners and intermediates. There is plenty of high-quality content for all skill levels, and after watching and absorbing much of the content on their channel, you should consider yourself an intermediate.
+## Images
 
-Link to the course - [Drawing Tutorials Online](https://www.youtube.com/c/DrawingTutorialsOnline/playlists)
+Images are easy to use in Markdown.
 
-### What's Next?
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg 'The Stormtroopocat')
+![Alt text goes here](./images/html-2.png)
 
-- digital art
-- or, explore a style you like for canvas art! [You have so many styles to choose from](https://en.wikipedia.org/wiki/List_of_art_movements).
+```
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Alt text goes here](./images/html-2.png)
 
-### Final Thoughts
+```
+
+Note that although possible with special configuration, you currently cannot modify the size of in-article images. The current max width is 650px. Please size image files accordingly for the fastest build times!
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+```
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
+
+## Blockquotes
+
+IMPORTANT: If you don't see any styling here, we haven't decided on blockquote styling yet :)
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+```
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+>>> ...or with spaces between arrows.
+```
+
+## Lists
+
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+
+```
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
 
 
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+```
+
+## Code
+
+Inline `code`
+
+Block code "fences"
+
+```
+Sample text here...
+Can span multi lines
+```
+
+````
+Inline `code`
+
+Block code "fences"
+
+```
+Sample text here...
+Can span multi lines
+```
+````
+
+At the moment, we have not implemented syntax highlighting. We recommend either prismjs or highlightjs if you'd like to add highlighting!
+
+## Tables
+
+Currently, we do not use HTML tables, however we may implement styling for this if there is a use-case in the future.

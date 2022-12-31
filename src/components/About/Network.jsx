@@ -13,12 +13,12 @@ const Network = () => {
             <div className="about">
               <h5 className="subtitle">About Us</h5>
               <h2 className="network-section-title">
-              Growing Network of Free Education
+              Growing Network of Resources
               </h2>
               <p>
-                We're called <u>Open</u> Ed because we're completely open source. Anyone can view our code, anyone can contribute, and best of all, anyone can use our code to create their own dream project. 
+              Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy.
               </p>
-              <p>Our "Open X" projects are not driven by profit. Rather, they are driven by helping each other, sharing knowledge, and creating amazing, impactful things.</p>
+              <p>Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot.</p>
             </div>
             <div className="picture">
               <StaticImage
@@ -31,26 +31,26 @@ const Network = () => {
 
             <div className="openmastery">
               <AiOutlineDeploymentUnit className="icon" />
-              <h3>Open Mastery</h3>
+              <h3>Partner 1</h3>
               <p>
-                Open Mastery was our first idea for a free educational project, and also our most intricate creation! Currently in beta, Open Mastery is an open source project that provides free, text-based learning on a growing number of subjects. With all courses written in Markdown, anyone can contribute their knowledge!
+              Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy. Fit roof party ugh fanny pack ascot. Blog messenger bag you probably haven't heard of them distillery, vexillologist offal brunch leggings gentrify sustainable mumblecore pok pok polaroid pour-over big mood. 
               </p>
               <p>
-                <a href="http://openmastery.one" target="_blank" rel="noopener noreferrer">Check out Open Mastery</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Check it out</a>
               </p>
             </div>
             <div className="openjournal">
               <AiOutlineDeploymentUnit className="icon" />
-              <h3>Open Journal</h3>
+              <h3>Partner 2</h3>
               <p>
-                What happens when you allow users to control the content of a blog, rather than the blog owners? I don't know yet.. because Open Journal is a work in progress! Stay tuned for updates.
+              Adaptogen skateboard schlitz viral edison bulb knausgaard shabby chic drinking vinegar semiotics cred occupy.
               </p>
             </div>
             <div className="network-card">
               <div className="card-wrapper">
                 <h3>Help us Grow</h3>
                 <p>
-                  Contributing is very easy. If you share our vision of an educated world, we'd love for you to help us grow.
+                  Contributing is very easy. If you share our vision, we'd love for you to help us grow.
                 </p>
                 <Link to="/support-us" className="network-card-btn not-blue">
                   How to Contribute

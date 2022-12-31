@@ -66,9 +66,9 @@ export default class Index extends React.Component {
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"name"}>
+                  {/* <label className="label" htmlFor={"name"}>
                     Your name
-                  </label>
+                  </label> */}
                   <div className="form-field col x-50">
                     <input
                       className="input-text js-input"
@@ -82,9 +82,9 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"email"}>
+                  {/* <label className="label" htmlFor={"email"}>
                     Email
-                  </label>
+                  </label> */}
                   <div className="form-field col x-50">
                     <input
                       className="input-text js-input"
@@ -98,9 +98,9 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={"message"}>
+                  {/* <label className="label" htmlFor={"message"}>
                     Message
-                  </label>
+                  </label> */}
                   <div className="form-field col x-100">
                     <textarea
                       className="input-text js-input"
@@ -122,14 +122,15 @@ export default class Index extends React.Component {
               Powered by{' '}
               <a
                 className="link"
-                href="https://www.staticforms.xyz/"
-                target="blank"
+                href="https://www.netlify.com/products/forms/"
+                target="_blank"
               >
-                Static Forms
+                Netlify Forms
               </a>
               .{' '}
             </p>
-            <p className="note">
+            {/* Not necessary, feel free to delete. Especially if not using Static Forms */}
+            {/* <p className="note">
               The information you submit in this form <u>is not stored</u>, per{' '}
               <a
                 href="https://www.staticforms.xyz/privacy"
@@ -138,8 +139,8 @@ export default class Index extends React.Component {
               >
                 Static Form's Privacy Policy
               </a>
-              . it is directly forwarded to our email.
-            </p>
+              . It is directly forwarded to our email.
+            </p> */}
           </section>
         </div>
       </Wrapper>

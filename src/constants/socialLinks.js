@@ -12,7 +12,7 @@ const SocialLinks = () => {
       <ul className="nav-icons">
         <li>
           <a
-            href="https://github.com/chrisnmorrison/openeducation"
+            href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Github"
@@ -22,7 +22,7 @@ const SocialLinks = () => {
         </li>
         <li>
           <a
-            href="https://reddit.com/r/openeducation/"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Subreddit"
@@ -32,7 +32,7 @@ const SocialLinks = () => {
         </li>
         <li>
           <a
-            href="https://twitter.com/opendotone"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Twitter"

@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import AboutUs from '../components/About/AboutUs'
 import Vision from '../components/About/Vision'
 import Network from '../components/About/Network'
-import TimelineComponent from '../components/About/TimelineComponent'
 import Seo from '../components/SEO'
 
 const about = () => {
@@ -17,7 +16,6 @@ const about = () => {
       <AboutUs />
       <Vision />
       <Network />
-      <TimelineComponent />
     </Layout>
   )
 }

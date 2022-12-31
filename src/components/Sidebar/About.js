@@ -12,7 +12,7 @@ const About = () => {
       <Wrapper>
         <Title title="Who We Are" />
         <StaticImage
-          src="../../assets/logo-dark-bg.png"
+          src="../../assets/logo.png"
           layout="fixed"
           width={100}
           height={100}
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
     color: var(--grey-5);
   }
   .img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     margin: 0 auto;
     margin-bottom: 1rem;
   }

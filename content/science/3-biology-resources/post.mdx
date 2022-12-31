@@ -9,64 +9,175 @@ topPick: true
 popular: false
 ---
 
-Life on Earth emerged over 3.7 billion years ago ([source](https://ui.adsabs.harvard.edu/abs/2018AsBio..18..343P)). Biology is one of the "Big 3" Sciences (alongside Chemistry and Physics), and is a field that we can all relate to. After all, how do we know what foods are healthy? Why are they healthy? How do antibiotics work, and how many lives have they saved? How do doctors know how to save lives?
+This file contains various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
 
-All of these questions are answered by Biology, or at least, subfields of Biology such as Medicine. Biology helps us understand the living world around us and within us, and whether you are a STEM student or an interested learner, understanding the foundations of Biology is sure to help you understand and appreciate the living world around you. 
+## Markdown Guide
 
-Learning Biology is both rewarding and fun, and we hope you agree! Without further ado, here are 3 resources that will help you wrap your head around some of the more tricky parts of Biology.
+# h1 Heading
 
-### 1. [Crash Course Biology](https://www.youtube.com/watch?v=QnQe0xW_JY4&list=PL3EED4C1D684D3ADF) - Youtube
+## h2 Heading
 
-Crash Course is a go-to resource for so many subjects. They take complicated subjects and present the main ideas in a fun, engaging manner. This is especially helpful when you are trying to wrap your head around some of Biology's trickier concepts.
+### h3 Heading
 
-Crash Course covers all of the subjects that you'll cover in high school and university-level Biology, and more. If you want a resource that covers all of the main ideas in an easy-to-follow manner, this is the resource for you.
+#### h4 Heading
 
-- **Price**: Free
-- **Paid Option** : No
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+##### h5 Heading
 
-**Who should take this course?** This is a good option for complete beginners who want to prepare for high school or university-level courses.
+###### h6 Heading
 
-Link to the course - [Crash Course Biology](https://www.youtube.com/watch?v=QnQe0xW_JY4&list=PL3EED4C1D684D3ADF)
+```
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+```
 
-### 2. [Concepts of Biology](https://openstax.org/details/books/concepts-biology)
+## Horizontal Rules
 
-OpenStax is a leading name in free education, and for good reason. Their free, introductory textbooks are the same quality as paid textbooks, yet you can easily download and use them for free.
+---
 
-Concepts of Biology is the easier read of Biology textbooks, and is marketed towards non-STEM majors who want to understand the major ideas in Biology, before deep-diving into the more nitty gritty details.
+---
 
-For those looking for a bit more challenging read, OpenStax has other options as well:
+---
 
-[Biology 2e](https://openstax.org/details/books/biology-2e) - A similar book, but dives deeper into several subjects. This book contains the content of first year university-level Biology classes.
+```
+___
 
-[Microbiology](https://openstax.org/details/books/microbiology) - This book dives deeper into Biology at a microscopic level, such as cellular structure and interactions. Contains the content of first or second year university-level Microbiology classes.
+---
 
-- **Price**: Free
-- **Paid Option** : No
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+***
+```
 
-**Who should take this course?** This is a good option for beginners who want to understand the major ideas in Biology.
+## Links
 
-Link to the course - [Concepts of Biology](https://openstax.org/details/books/concepts-biology)
+[Link Text](http://dev.nodeca.com)
 
-### 3. [Various Biology Courses](https://www.edx.org/learn/biology) - EdX
+[Link with Title](http://nodeca.github.io/pica/demo/ 'Title Text!')
 
-We tried to narrow this one down to a single course, but with the amount of high-quality Biology content on EdX, this was impossible. The first two options above provide a very general overview of Biology, which is helpful for new learners. Once you start learning Biology, you may realize that there are some areas that interest you more than others. For example, you may find Genetics more interesting than Biochemistry.
+```
+[Link Text](http://dev.nodeca.com)
 
-Now, there is a lot of overlap between Biology subdisciplines, but by focusing in on one area, you'll learn what separates it from the other areas, and learn about the unique research methods used in that area. EdX is a fantastic resource for this, since they provide free classes on so many different subject areas. You can find classes on Neurobiology, Genetics, Bioinformatics, and so much more!
+[Link with Title](http://nodeca.github.io/pica/demo/ "Title Text!")
+```
 
-- **Price**: Free
-- **Paid Option** : Yes
-- **What the paid option offers**: Certificate of completion and graded assignments
-- **Difficulty Level**: Beginner
-- **Flexible schedule**: Yes
+## Images
 
-**Who should use this resource?** While EdX does provide general classes on Biology, their resources on more specific subdisciplies are top-notch. We highly recommend learning general Biology until you find what interests you most, and see if EdX has a class on it!
+Images are easy to use in Markdown.
 
-Link to the course - [Various Biology Courses](https://www.edx.org/learn/biology)
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg 'The Stormtroopocat')
+![Alt text goes here](./images/html-2.png)
 
-### Final Thoughts
+```
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Alt text goes here](./images/html-2.png)
 
-Biology is at the heart of many issues facing the world today. This includes global disease, neurological disorders, effects of pollution, and so much more. We hope that by learning even a little Biology, you learn to appreciate the world around you!
+```
+
+Note that although possible with special configuration, you currently cannot modify the size of in-article images. The current max width is 650px. Please size image files accordingly for the fastest build times!
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+```
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
+
+## Blockquotes
+
+IMPORTANT: If you don't see any styling here, we haven't decided on blockquote styling yet :)
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+```
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+>>> ...or with spaces between arrows.
+```
+
+## Lists
+
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+
+```
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+```
+
+## Code
+
+Inline `code`
+
+Block code "fences"
+
+```
+Sample text here...
+Can span multi lines
+```
+
+````
+Inline `code`
+
+Block code "fences"
+
+```
+Sample text here...
+Can span multi lines
+```
+````
+
+At the moment, we have not implemented syntax highlighting. We recommend either prismjs or highlightjs if you'd like to add highlighting!
+
+## Tables
+
+Currently, we do not use HTML tables, however we may implement styling for this if there is a use-case in the future.

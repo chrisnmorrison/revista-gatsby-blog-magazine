@@ -8,10 +8,10 @@ import './sidebar-styles.scss'
 
 const partners = [
   {
-    name: 'Open Mastery',
+    name: 'Open Ed',
     logo: '',
-    logoAlt: 'Logo for Open Mastery',
-    url: 'https://openmastery.one',
+    logoAlt: 'Logo for Open Ed',
+    url: 'https://opened.one',
   },
   //
   // {
@@ -39,7 +39,7 @@ const Recent = () => {
                 className="partner-img"
                 placeholder="blurred"
               />
-              <a className="partner-name" href={partner.url}>
+              <a target='_blank' rel='noopener noreferrer' className="partner-name" href={partner.url}>
                 {partner.name}
               </a>
             </div>
