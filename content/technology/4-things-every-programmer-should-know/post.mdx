@@ -1,0 +1,162 @@
+---
+title: 4 Things Every Junior Developer Should Know (and, Where to Learn Them)
+image: images/socrates.jpg # place in /images folder, in same directory
+imageAttribution: https://www.vecteezy.com/free-vector/drawing # if attribution needed, put link to source
+date: 2022-05-11 # Date written, OR date edited
+category: Technology
+trending: false # leave trending, topPick, and popular as false. The maintainers typically decide this :)
+topPick: false
+popular: false
+---
+
+This file contains a guide to our article structure. When writing an article, please duplicate the `template` folder, rename according, add to an existing directory if applicable, follow the structure of this document when writing an article, and place & link to images in the `images` folder within the same folder. This is crucial for maintaining a structured project!
+
+In addition to file structure above, maintaining a consistent written structure for our articles is a crucial aspect of our project. We want our users to receive a consistent, straightforward user experience and to achieve this, consistency is key. Despite these guidelines, our structure still allows for ample writing creativity.
+
+If you would like to discuss this structure and suggest changes, please open an issue on Github, or [contact us directly](https://openeducation.one/contact).
+
+Here is a [live example that follows this format](#), and here is a [guide to Markdown syntax](#). Additionally, we offer miscellaneous tips at the bottom of this guide.
+
+Here is our current structure for an article, with sample text from an article to help illustrate the structure.
+
+**Important**: If this document seems confusing, please [reach out with questions](https://openeducation.one/contact) or suggestions on how we could improve it. Don't hesitate to submit anyways even if you think a few details are sightly off, we're happy to offer suggestions and for quick fixes, fix it for you.
+
+---
+
+## Title, Metadata, and Overall Article
+
+First and most importantly: choosing courses and resources to link to. There's no point linking to subpar courses, and even worse, discussing courses that you haven't familiarized yourself with. When deciding on courses and resources to link to, we consider several factors:
+
+- The best resources are the ones you have experience with, and can discuss. You don't have to be an expert, but if you link to a science resource but haven't looked at the content/syllabus/summary of the resource, then there's not much to (truthfully) say about it. We hope that our contributors are at the very least, studying (or have studied) the subject they are writing about. In essence, the best articles you will write about are the ones you _actually_ want to write about!
+- Rating:
+- Limited access to resource without paying:
+- Instructor qualifications:
+- Resource is on a reputable site:
+
+If you're reading the Markdown file for this page rather than the webpage ([here, if you aren't there already](https://raw.githubusercontent.com/chrisnmorrison/openeducation/main/content/template/post.mdx?token=GHSAT0AAAAAABW74TF3NFGBFLQ7EQGBTVVYYXPZVVQ)), you'll see that the first few lines contain metadata. To write these:
+
+- **Title**: Most of our articles are so-called "curated lists" of resources, and to keep the articles easy to find and convey information, the title should simply follow the format "The best X resources to learn X for free". Tweak it slightly if you would like, for example "The best" can also be "top", "X best resources...", etc. We also accept other types of articles, so long as they adhere our values and mission. We'll discuss that later in this document, but most of this document will assume you are writing a curated list.
+- **image**: This is where you place the link to the article image. First, make sure you followed the instructions on the first line of this document (duplicating and renaming `template` folder). Then, place the image in the `images` folder, and lastly place the link to the image here. For example, to write a link to a file called `img.png`, you can write either `./images/img.png` or `images/img.png`. If the image isn't showing, check that the image file name is spelled correctly.
+- **imageAttribution**: If attribution for the image is needed, put a link to the source. For example, sites like Vecteezy and Freepik have fantastic free images, but you often have to attribute. Follow the respective instructions of the image site and place the link here. If no attribution needed, you can remove this line.
+- **date**: Date written, OR date edited
+- **category**: [See our current list of Categories](https://github.com/chrisnmorrison/openeducation/blob/main/meta/current-categories.md). Choose the most applicable one if possible, and if your desired category isn't on this page, you can write a new one.
+- **trending**, **topPick**, **popular**: Leave these as false initially, or remove these lines. These create a more dynamic feel for Revista, like how many magazine or news websites are organized. The maintainers typically decide these values.
+
+---
+
+## [Introduction - 2-3 paragraphs]
+
+```
+How to write this section:
+
+- Why should someone learn this area?
+- What are the benefits of free learning?
+- What are the benefits of learning this area, specifically?
+- Are there a lot of free resources out there in this area?
+- Ask - is this section both informative and engaging?
+```
+
+### 1. [Name and link of site/resource](#) - Optionally, Site
+
+```
+How to write this section:
+
+Keep the heading short; just write the resource name or domain name, unless it's a sub-resource on a larger site, such as EdX, Udemy, or Youtube. If it is, list the site title at the end after a dash. Examples:
+
+    - Academy of Art Online
+    - In the Studio: Postwar Abstract Painting - EdX
+    - educationalsite.org
+    - freeCodeCamp (also acceptable: freecodecamp.org)
+    - Excel for Marketers - Hubspot
+
+One key exception is if the article focuses on resources on one specific site. For example, a list of 5 free courses on Udemy. In this case, simply list the course name(s) in the article headings, and listing ' - Udemy' in the headings is not necessary. For example, the article may be called "Top 3 Free Management Courses on Udemy", and the article headings may be:
+
+    - Agile PM 101 - Learn the Truth About Agile versus Waterfall
+    - Operations Management
+    - Fostering Belonging and Inclusion on Teams
+
+Next, let's discuss the actual content of this section. Please structure it in the following order (we've provided an example to illustrate it):
+
+    - Blurb about the resource - a bit about the site/resource, if it's beginner friendly, and what learners will get out of it
+    - A list of info about the resource. Please see the example below for the required list
+    - A 1-2 sentence "Who should take this course?" blurb
+    - A link to this course
+```
+
+[1-2 paragraph(s) about the resource]
+
+- **Price**: Free
+- **Paid Option** : [Yes, No]
+- **What the paid option offers**: (if this is not applicable, remove this bullet)
+- **Difficulty Level**: [Beginner, Intermediate, Advanced]
+- **Flexible schedule**: [Yes, No]
+
+**Who should take this course?** This is a good option for complete beginners who want to prepare for university-level courses. This is a beginner-friendly course with no prior experience necessary.
+
+Link to the course - [Name and link of site/resource](#)
+
+**Note** - This point-form list may be removed in the right circumstances, such as an article focusing on advice over resources. For example, [our article on improving creative thinking](https://opened.one/learn/creativity/4-ways-to-improve-your-creative-thinking). We link to resources, but instead of focusing on free and open resources, our primary goal is to share our thoughts on the subject and spark self-discussion.
+
+### 2. [Name and link of site/resource](#)
+
+```
+For additional items, simply repeat the same process as above and update the numbering in the title.
+```
+
+[1-2 paragraph(s) about the resource]
+
+- **Price**: Free
+- **Paid Option** : [Yes, No]
+- **What the paid option offers**: (if this is not applicable, remove this bullet)
+- **Difficulty Level**: [Beginner, Intermediate, Advanced]
+- **Flexible schedule**: [Yes, No]
+
+**Who should take this course?** This is a good option for complete beginners who want to prepare for university-level courses. This is a beginner-friendly course with no prior experience necessary.
+
+Link to the course - [Name and link of site/resource](#)
+
+### What's Next?
+
+This section may be omitted, but we recommend keeping it! Learners love having a learning path, and this is your opportunity to answer the question "I've learned the basics of this topic.. where do I go next?"
+
+For example:
+
+- Those learning programming may become comfortable in their language of choice, and they may want to seek domain specific knowledge (e.g. Python learners choosing their path - Web Development? Data Science? Automation?).
+- Those learning the core ideas in Philosophy or Logic may want to find communities online, or may want to share their ideas with a publication.
+- Those learning science may want to get involved in science. Are there any volunteer opportunities for that field?
+
+Like we said, this section may be omitted. Some articles may be more suited to keeping this section than others, so don't feel like you have to force this section!
+
+### Final Thoughts
+
+```
+How to write this section:
+
+- 1-2 paragraphs
+- Otherwise, you have complete flexibility! For most articles, this section includes a combination of:
+    - a summary of the article
+    - insights into the field
+    - quotes
+    - thought-provoking ideas/questions
+    - anything else that may inspire the reader
+
+```
+
+---
+
+## Miscellaneous Tips
+
+A few notes from the maintainers:
+
+- If you submit an article and suspect your format may not be exactly right, don't worry. Submit anyways and we'll review it and help you achieve our target writing style.
+- Want to submit an article but you aren't confident in your writing? Don't worry, we all feel that way. That's why Revista is completely open source, so we can all work together to write and improve articles
+  - On that note, don't hesitate to submit partial articles.
+- No matter the submission type, please read our [Contributing Guidelines](https://github.com/chrisnmorrison/openeducation/blob/main/CONTRIBUTING.md) before submitting!
+
+---
+
+## What if I'm not writing a "curated list"?
+
+Interested in writing a learning path? We're currently playing around with a custom formatted learning path article!
+
+We accept other articles as well! For example, articles about the importance of free education, trends in free/Revista, and so on. The sky's the limit. For these articles, there's no structure to follow. You must only adhere to good writing standards and ethics, as well as [our mission and values](https://openeducation.one/about). Publishing these articles is left to the discretion of the maintainers, and please be aware that we may edit your submission before publishing.

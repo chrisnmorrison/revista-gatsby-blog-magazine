@@ -1,0 +1,240 @@
+---
+title: Learn Markdown Syntax
+image: images/open-ed.png # place in images folder, in same directory
+imageAttribution: https://www.vecteezy.com/free-vector/drawing # if attribution needed, put link to source
+date: 2022-05-11 # Date written, OR date edited
+category: Meta
+trending: false #leave trending, topPick, and popular as false. The maintainers typically decide this :)
+topPick: false
+popular: false
+# embeddedImages: # currently unused. It's easier to  embed images in markdown.
+#   - ./images/1.png
+#   - ./images/2.png
+#   - ./images/3.png
+---
+
+Article Body Goes Here
+
+This file will contain various Markdown snippets that you may use to construct an article. Markdown is very easy to use!
+
+## Markdown Guide
+
+# h1 Heading
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
+
+```
+# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+```
+
+## Horizontal Rules
+
+---
+
+---
+
+---
+
+```
+___
+
+---
+
+***
+```
+
+## Links
+
+[Link Text](http://dev.nodeca.com)
+
+[Link with Title](http://nodeca.github.io/pica/demo/ 'Title Text!')
+
+```
+[Link Text](http://dev.nodeca.com)
+
+[Link with Title](http://nodeca.github.io/pica/demo/ "Title Text!")
+```
+
+## Images
+
+Images are easy to use in Markdown.
+
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg 'The Stormtroopocat')
+![Alt text goes here](./images/html-2.png)
+
+```
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+![Alt text goes here](./images/html-2.png)
+
+```
+
+Note that although possible with special configuration, you currently cannot modify the size of in-article images. The current max width is 650px. Please size image files accordingly for the fastest build times!
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+_This is italic text_
+
+_This is italic text_
+
+~~Strikethrough~~
+
+```
+**This is bold text**
+
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
+
+## Blockquotes
+
+IMPORTANT: If you don't see any styling here, we haven't decided on blockquote styling yet :)
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+```
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+>>> ...or with spaces between arrows.
+```
+
+## Lists
+
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+ 
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+
+```
+#### Unordered
+
+- Create a list by starting a line with `+`, `-`, or `*`
+- Very easy!
+ 
+
+#### Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+###### Start numbering with offset:
+
+158. foo
+159. bar
+```
+
+## Code
+
+Inline `code`
+
+Block code "fences" 
+
+```
+Sample text here...
+Can span multi lines
+```
+
+````
+Inline `code`
+
+Block code "fences" 
+
+```
+Sample text here...
+Can span multi lines
+```
+````
+
+At the moment we have not implemented syntax highlighting, since there won't be many code blocks on the site. Except for Markdown!
+
+## Tables
+
+Currently, we do not use HTML tables, however we may implement styling for this is there is a use-case in the future.
+
+### Footnotes
+
+Footnote 1 link[^1].
+
+Footnote 2 link[^2].
+
+Duplicated footnote reference[^2].
+
+**Footnotes will appear at bottom of this page.**
+
+[^1]: Footnote **can have markdown**
+
+    and multiple paragraphs.
+
+[^2]: Footnote text.
+
+```markdown
+Footnote 1 link[^1].
+
+Footnote 2 link[^2].
+
+Duplicated footnote reference[^2].
+
+**Footnotes will appear at bottom**
+
+[^1]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
+[^2]: Footnote text.
+```
+
+### Figcaptions
+
+Markdown does not natively support figcaptions (at least not at the time of writing this). It's worth noting that you can write HTML directly in Markdown files, but we've found a way to simplify this process.
+
+Instead of using figcaptions to caption images, we'll be using a little shortcut [found on Stack Overflow](https://stackoverflow.com/questions/19331362/using-an-image-caption-in-markdown-jekyll). Simply place the image using markdown (as shown earlier), then place italicized text after using `*write caption here*` with the caption inside of it. When compiled to HTML, this will place `<em>` tags around the text, and using a CSS rule `img + em { }`, we turn this into a caption. For example,
+
+![Features of Java](./images/html-2.png 'The Tea Company')
+_Image from https://techvidvan.com/tutorials/java-introduction/_
+
+```markdown
+![Features of Java](./images/html-2.png 'The Tea Company')
+_Image from https://techvidvan.com/tutorials/java-introduction/_
+```
+
+### See the footnotes below?
+
+Remember when we wrote footnotes earlier? They automatically appear at the bottom! ⬇️
