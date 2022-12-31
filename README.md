@@ -39,7 +39,10 @@
   - [Built With](#built-with)
 - [Revista? Here is our tl:dr](#revista-here-is-our-tldr)
 - [Quick Start](#quick-start)
-- [IMPORTANT STEP](#important-step)
+- [How to Customize](#how-to-customize)
+  - [Modify `gatsby-config.js` to contain your information, not ours](#modify-gatsby-configjs-to-contain-your-information-not-ours)
+  - [Change article paths](#change-article-paths)
+- [Form Submission](#form-submission)
 - [Roadmap](#roadmap)
 - [Usage](#usage)
 - [License](#license)
@@ -58,6 +61,8 @@
 Revista is an MIT licensed open-source magazine/blog template for passionate people to promote their favourite knowledge and learning resources online.
 
 **FYI**: If you were a user of <a href='https://openmastery.one'>https://openmastery.one</a> (no longer in use) or <a href='https://opened.one'>https://opened.one</a>, be aware that we've moved all of our old articles to the new Open Ed site (See on <a href='https://github.com/chrisnmorrison/openeducation'>Github</a>, or <a href='https://opened.one'>view our live site</a>), which contains articles and text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
+
+At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain artifacts. We've listed in customization instruction in [How to Customize](#how-to-customize).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,7 +113,22 @@ Wait, there's more..
 3. (optional) Look at structure and articles in `/content` to understand what metadata to include in your articles.
 4. Delete ALL content in `/content` except the `/content/template` folder
 
-## IMPORTANT STEP
+## How to Customize
+
+In order to turn Revista into your own blog or magazine, you'll have to make some necessary changes. Let's discuss them here.
+
+### Modify `gatsby-config.js` to contain your information, not ours
+
+Simply run through `gatsby-config.js` and change settings as needed. 
+
+### Change article paths
+
+We used the path `/learn/...` for our articles, which we liked. But, you may not want this. Our best recommendation is to use VS Code to fix this (or an IDE with a similar search feature).
+
+1. Open project in VS Code
+2. Click magnifying glass on left toolbar
+
+## Form Submission
 
 **Note**: We've decided to change to Netlify Forms for simplicity. 
 

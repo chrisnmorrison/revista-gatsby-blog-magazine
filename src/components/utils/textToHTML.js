@@ -1,6 +1,6 @@
 /*
 Found a workaround instead of using this. Keeping in case needed later.
-One big issue though: cannot use 'window' in Gatsby SSR
+One big issue with this: cannot use 'window' in Gatsby SSR
 
 */
 

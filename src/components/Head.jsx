@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet'
 import React from 'react'
 
-
 const Head = () => {
   return (
     <>
@@ -10,12 +9,11 @@ const Head = () => {
           lang: 'en',
         }}
       >
-        <link
-          rel="canonical" href='https://opened.one'
-        />
-        <style>
-          {`
+        <link rel="canonical" href="https://opened.one" />
 
+        {/* Gotta be a better way to do this. We want to import fonts, but ONLY Latin fonts. Excluding unused font types significantly improves load times */}
+        <style>
+{`
 
 /* latin-ext */
 @font-face {

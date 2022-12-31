@@ -3,6 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+// Might be able to use this component to display ads on the sidebar.
+
 const SidebarImage = () => {
   return (
     <StyledSidebarImage>

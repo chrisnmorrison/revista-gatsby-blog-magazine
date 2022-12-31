@@ -10,7 +10,7 @@ require('dotenv').config({
 })
 
 module.exports = {
-  pathPrefix: `/blog`,
+  pathPrefix: `/`,
   siteMetadata: {
     title: 'Revista',
     titleTemplate: '',
@@ -70,11 +70,6 @@ module.exports = {
         gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `${process.env.GATSBY_ADSENSE_ID}`,
-      },
-    },
+
   ],
 }
