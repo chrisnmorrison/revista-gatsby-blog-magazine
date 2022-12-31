@@ -55,7 +55,9 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-.env*
+
+# If using .env, UNCOMMENT BELOW LINE
+# .env*
 
 # gatsby files
 .cache/

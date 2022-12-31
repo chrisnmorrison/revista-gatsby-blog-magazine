@@ -28,6 +28,9 @@ Subcategories will show up in the "All Categories" page, but will not show in th
 List:
 
 - Biology
+- Chemistry
+- Data Science
+- ...
 
 ## Special Categories
 
