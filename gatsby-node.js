@@ -36,26 +36,25 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   const getCategories = await graphql(`
-  query GetDistinctCategories {
-    categories: allMdx {
-      distinct(field: {frontmatter: {category: SELECT}})
-      nodes {
-        internal {
-          contentFilePath
+    query GetDistinctCategories {
+      categories: allMdx {
+        distinct(field: { frontmatter: { category: SELECT } })
+        nodes {
+          internal {
+            contentFilePath
+          }
         }
       }
     }
-  }
   `)
 
   const posts = result.data.allMdx.nodes
   const categories = getCategories.data.categories.distinct
 
-
   posts.forEach(node => {
     slug = slugify(node.frontmatter.title, { lower: true })
     createPage({
-      path: `/learn/${node.frontmatter.category.toLowerCase()}/${slug}`,
+      path: `/${node.frontmatter.category.toLowerCase()}/${slug}`,
       component: `${postTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
       context: { id: node.id, slug, title: node.frontmatter.title },
     })
@@ -63,7 +62,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   categories.forEach(category => {
     createPage({
-      path: `/learn/${category.toLowerCase()}`,
+      path: `/${category.toLowerCase()}`,
       component: path.resolve(`src/templates/category-template.jsx`),
       context: {
         category,

@@ -16,10 +16,10 @@ module.exports = {
     titleTemplate: '',
     // titleTemplate: "%s - Curated List of Free Education Resources",
     description:
-      'Revista contains curated lists and learning paths for a variety of subjects. Our goal is to promote free learning in a variety of academic fields.',
-    url: 'https://www.opened.one', // No trailing slash allowed!
+      'Revista is an open source blog/magazine template. Simply write articles in Markdown, place in the content folder, and Revista will automatically create categories and articles!',
+    url: 'https://revista.mesmerdesign.ca', // No trailing slash allowed!
     image: '/logo.png', // Path to the image placed in the 'static' folder, in the project's root directory.
-    twitterUsername: '@opendotone',
+    twitterUsername: '',
     defaultTitle: 'Revista',
   },
 
@@ -33,14 +33,14 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-read-time-estimate`,
     `gatsby-transformer-remark`,
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://opened.one',
-        sitemap: 'https://opened.one/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-robots-txt',
+    //   options: {
+    //     host: 'https://mysite.com',
+    //     sitemap: 'https://mysite.com/sitemap.xml',
+    //     policy: [{ userAgent: '*', allow: '/' }],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {

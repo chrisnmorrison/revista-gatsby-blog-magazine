@@ -53,8 +53,8 @@ const SEO = ({ title, description, image, article }) => {
           "@context": "https://schema.org/",
           "@type": "Organization",
           "description: "Free and Revista Resources",
-          "url": "https://openeducation.one",
-          "homepage": "https://openeducation.one",
+          "url": "https://revista-gatsby-blog-magazine.one",
+          "homepage": "https://revista-gatsby-blog-magazine.one",
           "name": "Revista",
           "email": "mailto:opendotone@gmail.com",
           "contactPoint": {

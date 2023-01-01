@@ -9,34 +9,34 @@ import slugify from 'slugify'
 import './features-styles.scss'
 
 const query = graphql`
-query Top {
-  allMdx(
-    limit: 1
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {topPick: {eq: true}}}
-  ) {
-    nodes {
-      frontmatter {
-        title
-        date(formatString: "MMM, Do YYYY")
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+  query Top {
+    allMdx(
+      limit: 1
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { topPick: { eq: true } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "MMM, Do YYYY")
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
           }
+          category
         }
-        category
-      }
-      id
+        id
 
-      excerpt(pruneLength: 60)
-      fields {
-        timeToRead {
-          words
+        excerpt(pruneLength: 60)
+        fields {
+          timeToRead {
+            words
+          }
         }
       }
     }
   }
-}
 `
 
 const Top = () => {
@@ -56,7 +56,7 @@ const Top = () => {
         return (
           <article key={post.id} className="card card-bg card-shadow">
             <Link
-              to={`/learn/${category.toLowerCase()}/${slugify(title, {
+              to={`/${category.toLowerCase()}/${slugify(title, {
                 lower: true,
               })}`}
             >
@@ -70,7 +70,7 @@ const Top = () => {
 
             <div className="card-body">
               <Link
-                to={`/learn/${category.toLowerCase()}/${slugify(title, {
+                to={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >
@@ -89,7 +89,7 @@ const Top = () => {
                   <ul className="card-meta-tag list-inline">
                     <li className="list-inline-item">
                       <Link
-                        to={`/learn/${category.toLowerCase()}`}
+                        to={`/${category.toLowerCase()}`}
                         className="category-link"
                         style={{
                           color: getColor(category),
@@ -103,7 +103,7 @@ const Top = () => {
                 </li>
               </ul>
               <Link
-                to={`/learn/${category.toLowerCase()}/${slugify(title, {
+                to={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >
@@ -111,7 +111,7 @@ const Top = () => {
               </Link>
               <a
                 className="btn btn-outline-primary"
-                href={`/learn/${category.toLowerCase()}/${slugify(title, {
+                href={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >

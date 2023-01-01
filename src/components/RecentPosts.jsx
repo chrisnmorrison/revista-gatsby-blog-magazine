@@ -23,13 +23,7 @@ const RecentPosts = () => {
           <h2 className="section-title">Recent Articles</h2>
 
           {posts.map(post => {
-            const {
-              title,
-              category,
-              date,
-              slug,
-              image,
-            } = post.frontmatter
+            const { title, category, date, slug, image } = post.frontmatter
 
             return (
               <article
@@ -37,7 +31,7 @@ const RecentPosts = () => {
                 className="card card-bg card-shadow recent-article-mb"
               >
                 <Link
-                  to={`/learn/${category.toLowerCase()}/${
+                  to={`/${category.toLowerCase()}/${
                     slug || slugify(title, { lower: true })
                   }`}
                 >
@@ -51,7 +45,7 @@ const RecentPosts = () => {
 
                 <div className="card-body">
                   <Link
-                    to={`/learn/${category.toLowerCase()}/${
+                    to={`/${category.toLowerCase()}/${
                       slug || slugify(title, { lower: true })
                     }`}
                   >
@@ -70,7 +64,7 @@ const RecentPosts = () => {
                       <ul className="card-meta-tag list-inline">
                         <li className="list-inline-item">
                           <Link
-                            to={`/learn/${category.toLowerCase()}`}
+                            to={`/${category.toLowerCase()}`}
                             className="category-link"
                             style={{
                               color: getColor(category),
@@ -86,7 +80,7 @@ const RecentPosts = () => {
                     </li>
                   </ul>
                   <Link
-                    to={`/learn/${category.toLowerCase()}/${
+                    to={`/${category.toLowerCase()}/${
                       slug || slugify(title, { lower: true })
                     }`}
                   >
@@ -94,7 +88,7 @@ const RecentPosts = () => {
                   </Link>
                   <a
                     className="btn btn-outline-primary"
-                    href={`/learn/${category.toLowerCase()}/${slugify(title, {
+                    href={`/${category.toLowerCase()}/${slugify(title, {
                       lower: true,
                     })}`}
                   >
@@ -112,29 +106,29 @@ const RecentPosts = () => {
 }
 
 export const query = graphql`
-query RecentPosts {
-  allMdx(sort: {frontmatter: {date: DESC}}, limit: 3) {
-    nodes {
-      excerpt
-      frontmatter {
-        title
-        category
-        date(formatString: "MMMM, Do YYYY")
-        image {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+  query RecentPosts {
+    allMdx(sort: { frontmatter: { date: DESC } }, limit: 3) {
+      nodes {
+        excerpt
+        frontmatter {
+          title
+          category
+          date(formatString: "MMMM, Do YYYY")
+          image {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
+            }
           }
         }
-      }
-      id
-      fields {
-        timeToRead {
-          words
+        id
+        fields {
+          timeToRead {
+            words
+          }
         }
       }
     }
   }
-}
 `
 
 export default RecentPosts

@@ -53,7 +53,8 @@ export default class Index extends React.Component {
                 className="contact-form-styles contact-row"
                 method="post"
                 action="/success"
-                data-netlify="true"
+                // Uncomment below line for Netlify Forms to work!
+                // data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 onSubmit={this.handleSubmit}
               >

@@ -9,33 +9,33 @@ import slugify from 'slugify'
 import './features-styles.scss'
 
 const query = graphql`
-query Popular {
-  allMdx(
-    limit: 1
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {popular: {eq: true}}}
-  ) {
-    nodes {
-      frontmatter {
-        title
-        date(formatString: "MMM, Do YYYY")
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+  query Popular {
+    allMdx(
+      limit: 1
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { popular: { eq: true } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "MMM, Do YYYY")
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
           }
+          category
         }
-        category
-      }
-      id
-      excerpt(pruneLength: 60)
-      fields {
-        timeToRead {
-          words
+        id
+        excerpt(pruneLength: 60)
+        fields {
+          timeToRead {
+            words
+          }
         }
       }
     }
   }
-}
 `
 
 const Popular = () => {
@@ -55,7 +55,7 @@ const Popular = () => {
         return (
           <article key={post.id} className="card card-bg card-shadow">
             <Link
-              to={`/learn/${category.toLowerCase()}/${slugify(title, {
+              to={`/${category.toLowerCase()}/${slugify(title, {
                 lower: true,
               })}`}
             >
@@ -69,7 +69,7 @@ const Popular = () => {
 
             <div className="card-body">
               <Link
-                to={`/learn/${category.toLowerCase()}/${slugify(title, {
+                to={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >
@@ -88,7 +88,7 @@ const Popular = () => {
                   <ul className="card-meta-tag list-inline">
                     <li className="list-inline-item">
                       <Link
-                        to={`/learn/${category.toLowerCase()}`}
+                        to={`/${category.toLowerCase()}`}
                         className="category-link"
                         style={{
                           color: getColor(category),
@@ -102,7 +102,7 @@ const Popular = () => {
                 </li>
               </ul>
               <Link
-                to={`/learn/${category.toLowerCase()}/${slugify(title, {
+                to={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >
@@ -110,7 +110,7 @@ const Popular = () => {
               </Link>
               <a
                 className="btn btn-outline-primary"
-                href={`/learn/${category.toLowerCase()}/${slugify(title, {
+                href={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >

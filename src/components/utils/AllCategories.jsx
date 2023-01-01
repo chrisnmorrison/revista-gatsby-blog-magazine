@@ -6,11 +6,11 @@ import { getColor } from './heroCategories'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const query = graphql`
-query AllCategories {
-  allMdx(sort: {frontmatter: {category: ASC}}) {
-    distinct(field: {frontmatter: {category: SELECT}})
+  query AllCategories {
+    allMdx(sort: { frontmatter: { category: ASC } }) {
+      distinct(field: { frontmatter: { category: SELECT } })
+    }
   }
-}
 `
 
 const AllCategories = () => {
@@ -25,7 +25,7 @@ const AllCategories = () => {
       <div className="container categories-page ">
         <div className="row">
           <div className="col-md-6">
-            <h1 className='section-title categories-title'>All Categories</h1>
+            <h1 className="section-title categories-title">All Categories</h1>
             <div className="categories-list col-12 ">
               {allCategories.map((category, index) => {
                 const color = getColor(category)
@@ -34,29 +34,27 @@ const AllCategories = () => {
                     <Link
                       className="item not-blue"
                       key={index}
-                      to={`/learn/${category.toLowerCase()}`}
+                      to={`/${category.toLowerCase()}`}
                     >
                       <div
                         className="category-color"
                         style={{ backgroundColor: color }}
                       ></div>
-                      <div className="category">
-                        {category}
-                      </div>
+                      <div className="category">{category}</div>
                     </Link>
                   </>
                 )
               })}
             </div>
-           
-          </div> <div className="col-12 col-md-6 all-categories-img">
-              <StaticImage
-                src="../../assets/undraw_choice.svg"
-                alt="Open Source Illustration"
-                layout="constrained"
-                placeholder="blurred"
-              />
-            </div>
+          </div>{' '}
+          <div className="col-12 col-md-6 all-categories-img">
+            <StaticImage
+              src="../../assets/undraw_choice.svg"
+              alt="Open Source Illustration"
+              layout="constrained"
+              placeholder="blurred"
+            />
+          </div>
         </div>
       </div>
     </Wrapper>
@@ -94,13 +92,13 @@ const Wrapper = styled.section`
     padding: 10px;
   }
 
-  .all-categories-img{
+  .all-categories-img {
     align-self: center;
     padding: 5rem;
   }
 
   @media screen and (max-width: 767px) {
-    .item{
+    .item {
       margin-bottom: 1rem;
       width: 50%;
       display: inline-flex;

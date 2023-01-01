@@ -17,7 +17,7 @@ const Post = ({ excerpt, frontmatter, fields }) => {
       <Seo title={title} description={excerpt} />
       <article className="card card-bg card-shadow category-card-margin">
         <Link
-          to={`/learn/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
+          to={`/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
         >
           <GatsbyImage image={getImage(image)} alt={title} className="img" />
           {/* <img className='top-and-popular-img' src={imageSource} alt={title} /> */}
@@ -25,7 +25,7 @@ const Post = ({ excerpt, frontmatter, fields }) => {
 
         <div className="card-body category-page-card">
           <Link
-            to={`/learn/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
+            to={`/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
           >
             <h3>{title}</h3>
           </Link>
@@ -42,7 +42,7 @@ const Post = ({ excerpt, frontmatter, fields }) => {
               <ul className="card-meta-tag list-inline">
                 <li className="list-inline-item">
                   <Link
-                    to={`/learn/${category.toLowerCase()}`}
+                    to={`/${category.toLowerCase()}`}
                     className="category-link"
                     style={{
                       color: getColor(category),
@@ -55,18 +55,18 @@ const Post = ({ excerpt, frontmatter, fields }) => {
               </ul>
             </li>
           </ul>
-          <Link className='excerpt-link'
-            to={`/learn/${category.toLowerCase()}/${slugify(title, { lower: true })
-            }`}
+          <Link
+            className="excerpt-link"
+            to={`/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
           >
             <p className="excerpt">{excerpt}</p>
           </Link>
 
-          <Link className='btn btn-outline-primary'
-            to={`/learn/${category.toLowerCase()}/${slugify(title, { lower: true })
-            }`}
+          <Link
+            className="btn btn-outline-primary"
+            to={`/${category.toLowerCase()}/${slugify(title, { lower: true })}`}
           >
-              Read More
+            Read More
           </Link>
         </div>
       </article>
@@ -80,7 +80,7 @@ const Wrapper = styled.article`
     text-align: center;
   }
 
-  .excerpt-link{
+  .excerpt-link {
     color: var(--grey-6);
   }
 

@@ -8,39 +8,38 @@ import slugify from 'slugify'
 import './features-styles.scss'
 
 const query = graphql`
-query Trending {
-  allMdx(
-    limit: 3
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {trending: {eq: true}}}
-  ) {
-    nodes {
-      frontmatter {
-        title
-        category
-        date(formatString: "MMM, Do YYYY")
-        image {
-          childImageSharp {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              height: 100
-              width: 100
-            )
+  query Trending {
+    allMdx(
+      limit: 3
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { trending: { eq: true } } }
+    ) {
+      nodes {
+        frontmatter {
+          title
+          category
+          date(formatString: "MMM, Do YYYY")
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                layout: CONSTRAINED
+                placeholder: BLURRED
+                height: 100
+                width: 100
+              )
+            }
           }
         }
-      }
-      id
+        id
 
-      fields {
-        timeToRead {
-          words
+        fields {
+          timeToRead {
+            words
+          }
         }
       }
     }
   }
-}
-
 `
 
 const Trending = () => {
@@ -63,7 +62,7 @@ const Trending = () => {
             className="card card-body card-bg card-shadow trending-card"
           >
             <Link
-              to={`/learn/${category.toLowerCase()}/${slugify(title, {
+              to={`/${category.toLowerCase()}/${slugify(title, {
                 lower: true,
               })}`}
             >
@@ -77,7 +76,7 @@ const Trending = () => {
 
             <div className="trending-meta">
               <Link
-                to={`/learn/${category.toLowerCase()}/${slugify(title, {
+                to={`/${category.toLowerCase()}/${slugify(title, {
                   lower: true,
                 })}`}
               >

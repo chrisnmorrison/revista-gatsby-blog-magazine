@@ -68,7 +68,7 @@ const Hero = () => {
                       style={categoryStyles}
                       className="hero-category"
                       key={index}
-                      to={`/learn/${slugify(category.category).toLowerCase()}`}
+                      to={`/${slugify(category.category).toLowerCase()}`}
                     >
                       <div className="overlay">
                         <div className="category-text-color">

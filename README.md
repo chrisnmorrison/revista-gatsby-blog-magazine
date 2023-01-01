@@ -3,7 +3,6 @@
 
 
 
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -16,7 +15,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/chrisnmorrison/openeducation">
+  <a href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine">
     <img src="src/assets/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -25,9 +24,9 @@
   <p align="center">
     Open-source Gatsby Magazine/Blog template
     <br />
-    <a href="https://github.com/chrisnmorrison/openeducation/issues">Report Bug</a>
+    <a href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/issues">Report Bug</a>
     ·
-    <a href="https://github.com/chrisnmorrison/openeducation/issues">Request Feature</a>
+    <a href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/issues">Request Feature</a>
   </p>
     <br />
 </div>
@@ -39,9 +38,12 @@
   - [Built With](#built-with)
 - [Revista? Here is our tl:dr](#revista-here-is-our-tldr)
 - [Quick Start](#quick-start)
+- [Guide to Article Metadata](#guide-to-article-metadata)
 - [How to Customize](#how-to-customize)
-  - [Modify `gatsby-config.js` to contain your information, not ours](#modify-gatsby-configjs-to-contain-your-information-not-ours)
-  - [Change article paths](#change-article-paths)
+  - [1. Modify `gatsby-config.js` to contain your information, not ours](#1-modify-gatsby-configjs-to-contain-your-information-not-ours)
+  - [2. Enable Netlify Forms (optional)](#2-enable-netlify-forms-optional)
+  - [3. Replace icon and favicon with your own](#3-replace-icon-and-favicon-with-your-own)
+  - [4. Replace all placeholder text with your own.](#4-replace-all-placeholder-text-with-your-own)
 - [Form Submission](#form-submission)
 - [Roadmap](#roadmap)
 - [Usage](#usage)
@@ -60,9 +62,11 @@
 
 Revista is an MIT licensed open-source magazine/blog template for passionate people to promote their favourite knowledge and learning resources online.
 
-**FYI**: If you were a user of <a href='https://openmastery.one'>https://openmastery.one</a> (no longer in use) or <a href='https://opened.one'>https://opened.one</a>, be aware that we've moved all of our old articles to the new Open Ed site (See on <a href='https://github.com/chrisnmorrison/openeducation'>Github</a>, or <a href='https://opened.one'>view our live site</a>), which contains articles and text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
+**FYI**: If you were a user of <a href='https://openmastery.one'>https://openmastery.one</a> (no longer in use) or <a href='https://opened.one'>https://opened.one</a>, be aware that we've moved all of our old articles to the new Open Ed site (See on <a href='https://github.com/chrisnmorrison/revista-gatsby-blog-magazine'>Github</a>, or <a href='https://opened.one'>view our live site</a>), which contains articles and text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
 
-At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain artifacts. We've listed in customization instruction in [How to Customize](#how-to-customize).
+At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain. 
+
+We've listed in customization instruction in [How to Customize](#how-to-customize). Apart from changing basic metadata, further customization will require knowledge of React, Gatsby, and GraphQL. However, if you are happy with Revista as-is, it is set up to begin publishing articles right away!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -81,7 +85,6 @@ At the moment, Revista is a very opinionated template. We originally made specif
 3. Clean, modern, **complete** design (i.e. more than a boilerplate), and very easy to customize.
 4. Incredibly fast speeds, optimized SEO, and since we are open-source, many more improvements on the way.
 
-
 ## Quick Start
 
 To get a local copy up and running:
@@ -99,7 +102,7 @@ yarn start
 OR
 
 ```bash
-npm install
+npm i
 npm run start
 # You might get an error as we use yarn. If you do:
 # 1. Delete yarn.lock
@@ -112,21 +115,67 @@ Wait, there's more..
 
 3. (optional) Look at structure and articles in `/content` to understand what metadata to include in your articles.
 4. Delete ALL content in `/content` except the `/content/template` folder
+5. Place your articles in `/content` with the required metadata (see any existing `.md` file in `/content` for an example) 
+
+## Guide to Article Metadata
+
+See any existing `.md` file in `/content` for an example of metadata.
+
+`title`: Article title. **Mandatory**.
+
+`image`: Path to image. **Optional**, but excluding may result in display errors.
+
+`imageAttribution`: Sites like Vecteezy require attribution, so consider using this field if getting images from a source that requires attribution. **Optional**, can be excluded without error.
+
+`date`: **Mandatory**. More recent dates are ordered first.
+
+`category`: **Mandatory**.
+
+`trending`: **Optional.** Displays article in "Featured" section. <a href='https://revista.mesmerdesign.ca/'>See demo site</a> for how this is displayed.
+
+`topPick`: **Optional.** Displays article in "Featured" section. <a href='https://revista.mesmerdesign.ca/'>See demo site</a> for how this is displayed.
+
+`popular`: **Optional.** Displays article in "Featured" section. <a href='https://revista.mesmerdesign.ca/'>See demo site</a> for how this is displayed.
 
 ## How to Customize
 
-In order to turn Revista into your own blog or magazine, you'll have to make some necessary changes. Let's discuss them here.
+In order to turn Revista into your own blog or magazine, you'll have to make some changes. Let's discuss them here.
 
-### Modify `gatsby-config.js` to contain your information, not ours
+### 1. Modify `gatsby-config.js` to contain your information, not ours
 
-Simply run through `gatsby-config.js` and change settings as needed. 
+Simply run through `gatsby-config.js` and change settings as needed. In addition to updating metadata to your info, uncomment `gatsby-plugin-robots-txt` and update the paths to your own site. 
 
-### Change article paths
+**Note**: if using the Netlify sitemap plugin, your sitemap will be located at `https://yoursiteurl.com/sitemap.xml` 
 
-We used the path `/learn/...` for our articles, which we liked. But, you may not want this. Our best recommendation is to use VS Code to fix this (or an IDE with a similar search feature).
+### 2. Enable Netlify Forms (optional)
 
-1. Open project in VS Code
-2. Click magnifying glass on left toolbar
+If you'd like to use Netlify Forms, head over to `src/components/ContactForm.jsx` and uncomment the line that says `// data-netlify="true"` (around line 57). Everything else is setup, so you will start receiving form submissions through Netlify. Ensure you set up email notifications in the Netlify app, if you want that.
+
+### 3. Replace icon and favicon with your own
+
+Note that if your icon is not close to 1:1 size, you may see display errors. Keep an eye out for this.
+
+### 4. Replace all placeholder text with your own.
+
+All pages are in `/src/pages`. 
+
+Article template and category page template are in `/src/templates`.
+
+Most page components are in `/src/components`, and almost everything else is located in one of the other `/src` subfolders.
+
+Pages/Components with text that you will need to update:
+
+- `src/components/Hero.jsx`
+- `src/components/Sidebar/` - several components to update
+- `src/pages/about.jsx` - several components to update
+- `src/pages/contact.jsx` - several components to update
+- `src/pages/support-us.jsx` - several components to update
+- `src/pages/privacy-policy.jsx` - add your own
+- `src/pages/terms-and-conditions.jsx` - add your own
+- `src/components/Footer.jsx` - add the name of your site
+- `src/constants/socialLinks.js` - add your own social links and icons
+
+**Note**: All main pages are linked to from the Navbar, so we recommend going page-by-page to look for text that needs updating. All components with text that needs updating will either be in `src/pages/` or `src/components/`
 
 ## Form Submission
 
@@ -138,22 +187,19 @@ Leaving this here in case we decide to change back to StaticForms.
 
 ---
 
-We use [StaticForms](https://www.staticforms.xyz/) and [Gatsby Environment Variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/) for our contact form. With the current code as-is, you may get an error when building. 
+[StaticForms](https://www.staticforms.xyz/) and [Gatsby Environment Variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/). With the current code as-is, you may get an error when building. 
 
 You will have to
 
 1. Set up your contact form, if you plan to use it.
 2. Get an API key from [StaticForms](https://www.staticforms.xyz/).
-3. Create the following two files:
+3. Create the following:
 ```bash
-# .env.production
+# .env
 STATIC_FORMS_KEY=YOUR_KEY
 ```
-```bash
-# .env.development
-STATIC_FORMS_KEY=YOUR_KEY
-# This one is optional 
-```
+
+If using Netlify, add your API key to the Netlify app as well.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -161,14 +207,15 @@ STATIC_FORMS_KEY=YOUR_KEY
 <!-- ROADMAP -->
 ## Roadmap
 
+- [x] Convert opened.one to Revista template
 - [x] Launch Revista, free forever
 - [ ] Improve Documentation
 - [ ] Clean up messy code
 - [ ] Drink more coffee
 - [ ] Multi-language Support
-- [ ] What else would you like to see? [Open an issue](https://github.com/chrisnmorrison/openeducation/issues)!
+- [ ] What else would you like to see? [Open an issue](https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/issues)!
 
-See the [open issues](https://github.com/chrisnmorrison/openeducation/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,9 +223,9 @@ See the [open issues](https://github.com/chrisnmorrison/openeducation/issues) fo
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-I'm proud of my design, and i'd love to see other sites using it.
+Revista is a Markdown + Gatsby blog/magazine starter, and can be hosted for free on sites like Netlify. I'm proud of my design, and i'd love to see other sites using it.
 
-You're welcome to fork our project and use it for your own site. Revista is a Markdown + Gatsby blog/magazine starter, and can be hosted for free on sites like Netlify.
+You're welcome to fork Revista and use it for your own site. You are not required to publish your code, you are only required to give credit (per MIT license). 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,11 +242,11 @@ By forking our repository and using it for your own purposes, we require two thi
 
 **1. You MUST adhere to our MIT license**
 
-**What does this mean?** MIT is a very permissive license, and you are free to fork, modify, and redistribute as you please. We simply require you to give credit to either 1) Chris, Revista's creator, or 2) <a href='https://mesmerdesign.ca' target='_blank' rel='noopener noreferrer'>Mesmer Design</a>, Chris' web development company.
+**What does this mean?** MIT is a very permissive license, and you are free to fork, modify, and redistribute as you please. We simply require you to give credit to either 1) Chris, Revista's creator, by linking to Revista's Github repo, or 2) <a href='https://mesmerdesign.ca' target='_blank' rel='noopener noreferrer'>Mesmer Design</a>, Chris' web development company.
 
 **2. You must delete all content in the `/content` folder**
 
-Except the `/template` folder, which you can optionally use to create a `.md` template for your articles. We've kept out old articles to give you a full picture of what a complete site looks like, with 7-10 categories. If you keep these articles, they will be repeated across the internet, which is an SEO nightmare for your site, and for others who do the same. Also, we've added placeholder (e.g. lorem ipsum, hipsum) to some articles, so you might not want to publish them ;)
+We've left some old files there so that you can see how to structure the `.md` article files.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -209,11 +256,11 @@ Except the `/template` folder, which you can optionally use to create a `.md` te
 <!-- CONTACT -->
 ## Contact
 
-Chris (primary maintainer) - opendotone@gmail.com
+Chris (primary maintainer) - mesmerdesignca@gmail.com
 
 Chris' Web Development Company - <a href='https://mesmerdesign.ca' target='_blank' rel='noopener noreferrer'>Mesmer Design</a>
 
-Project Link: [https://github.com/chrisnmorrison/openeducation](https://github.com/chrisnmorrison/openeducation)
+Project Link: [https://github.com/chrisnmorrison/revista-gatsby-blog-magazine](https://github.com/chrisnmorrison/revista-gatsby-blog-magazine)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,16 +281,16 @@ Project Link: [https://github.com/chrisnmorrison/openeducation](https://github.c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/chrisnmorrison/openeducation.svg?style=for-the-badge
-[contributors-url]: https://github.com/chrisnmorrison/openeducation/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/chrisnmorrison/openeducation.svg?style=for-the-badge
-[forks-url]: https://github.com/chrisnmorrison/openeducation/network/members
-[stars-shield]: https://img.shields.io/github/stars/chrisnmorrison/openeducation.svg?style=for-the-badge
-[stars-url]: https://github.com/chrisnmorrison/openeducation/stargazers
-[issues-shield]: https://img.shields.io/github/issues/chrisnmorrison/openeducation.svg?style=for-the-badge
-[issues-url]: https://github.com/chrisnmorrison/openeducation/issues
-[license-shield]: https://img.shields.io/github/license/chrisnmorrison/openeducation.svg?style=for-the-badge
-[license-url]: https://github.com/chrisnmorrison/openeducation/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
+[contributors-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
+[forks-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/network/members
+[stars-shield]: https://img.shields.io/github/stars/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
+[stars-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/stargazers
+[issues-shield]: https://img.shields.io/github/issues/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
+[issues-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/issues
+[license-shield]: https://img.shields.io/github/license/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
+[license-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/chris-morrison-180072/
 [opened-ed-screenshot]: src/assets/landing-screenshot.jpeg

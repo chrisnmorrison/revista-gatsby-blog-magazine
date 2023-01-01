@@ -18,12 +18,7 @@ const Support = () => {
           <div className="row">
             <div className="col-md-12">
               <h1 className="section-title categories-title">Support Us</h1>
-              <p>
-                Open Mastery and its contributors provide curated lists of free
-                educational resources in as growing number of areas. We will
-                remain free forever, which is only possible with the help of our
-                supporters!
-              </p>
+          
               <p>
                 We are also an{' '}
                 <a
@@ -85,7 +80,7 @@ const Support = () => {
                 <div>
                   <a
                     className="support-link"
-                    href="https://github.com/chrisnmorrison/openeducation/blob/main/CONTRIBUTING.md"
+                    href="https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/blob/main/CONTRIBUTING.md"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

@@ -41,7 +41,7 @@ const PostTemplate = ({ data, children }) => {
     <Layout>
       <Seo title={title} description={excerpt} />
       {/* <Helmet>
-      <link rel='canonical' href={`https://opened.one/learn/${category.toLowerCase()}/${slugify(title, { lower: true })}`}/>
+      <link rel='canonical' href={`https://opened.one/${category.toLowerCase()}/${slugify(title, { lower: true })}`}/>
       </Helmet> */}
       <Wrapper>
         <section className="container">
@@ -83,7 +83,7 @@ const PostTemplate = ({ data, children }) => {
                       <ul className="card-meta-tag list-inline">
                         <li className="list-inline-item">
                           <Link
-                            to={`/learn/${category.toLowerCase()}`}
+                            to={`/${category.toLowerCase()}`}
                             className="category-link"
                             style={{
                               color: getColor(category),
@@ -103,7 +103,7 @@ const PostTemplate = ({ data, children }) => {
                   {/* <MDXRenderer embeddedImages={embeddedImages}>
                     {body}
                   </MDXRenderer> */}
-                  <MDXProvider >{children}</MDXProvider>
+                  <MDXProvider>{children}</MDXProvider>
                 </div>
               </article>
             </div>
