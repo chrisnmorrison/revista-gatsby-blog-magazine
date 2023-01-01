@@ -69,11 +69,11 @@ View live site: https://revista.mesmerdesign.ca/
 
 
 
-Revista is an MIT licensed open-source magazine/blog template for passionate people to promote their favourite knowledge and learning resources online.
+Revista is an MIT licensed open-source magazine/blog template, built using React and Gatsby.
 
 **FYI**: If you were a user of <a href='https://openmastery.one'>https://openmastery.one</a> (no longer in use) or <a href='https://opened.one'>https://opened.one</a>, be aware that we've moved all of our old articles to the new Open Ed site (See on <a href='https://github.com/chrisnmorrison/revista-gatsby-blog-magazine'>Github</a>, or <a href='https://opened.one'>view our live site</a>), which contains articles and text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
 
-At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain. 
+At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain.
 
 We've listed in customization instruction in [How to Customize](#how-to-customize). Apart from changing basic metadata, further customization will require knowledge of React, Gatsby, and GraphQL. However, if you are happy with Revista as-is, it is set up to begin publishing articles right away!
 
