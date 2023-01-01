@@ -35,6 +35,7 @@
 
 <!-- TABLE OF CONTENTS -->
 - [About The Project](#about-the-project)
+- [pagespeed.web.dev Results](#pagespeedwebdev-results)
   - [Built With](#built-with)
 - [Revista? Here is our tl:dr](#revista-here-is-our-tldr)
 - [Quick Start](#quick-start)
@@ -59,6 +60,14 @@
 ## About The Project
 
 [![Revista Screen Shot][opened-ed-screenshot]](https://opened.one)
+
+View live site: https://revista.mesmerdesign.ca/
+
+## pagespeed.web.dev Results
+
+[![Lighthouse][lighthouse-screenshot]](https://pagespeed.web.dev/report?url=https%3A%2F%2Frevista.mesmerdesign.ca%2F&form_factor=mobile)
+
+
 
 Revista is an MIT licensed open-source magazine/blog template for passionate people to promote their favourite knowledge and learning resources online.
 
@@ -294,6 +303,7 @@ Project Link: [https://github.com/chrisnmorrison/revista-gatsby-blog-magazine](h
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/chris-morrison-180072/
 [opened-ed-screenshot]: src/assets/landing-screenshot.jpeg
+[lighthouse-screenshot]: src/assets/lighthouse.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
