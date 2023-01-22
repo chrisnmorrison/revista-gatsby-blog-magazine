@@ -1,7 +1,4 @@
-
 <a name="readme-top"></a>
-
-
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -9,8 +6,6 @@
 [![Issues][issues-shield]][issues-url]
 [![AGPL License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -31,12 +26,10 @@
     <br />
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
+
 - [About The Project](#about-the-project)
-- [pagespeed.web.dev Results](#pagespeedwebdev-results)
-  - [Built With](#built-with)
+- [Built With](#built-with)
 - [Revista? Here is our tl:dr](#revista-here-is-our-tldr)
 - [Quick Start](#quick-start)
 - [Guide to Article Metadata](#guide-to-article-metadata)
@@ -45,29 +38,25 @@
   - [2. Enable Netlify Forms (optional)](#2-enable-netlify-forms-optional)
   - [3. Replace icon and favicon with your own](#3-replace-icon-and-favicon-with-your-own)
   - [4. Replace all placeholder text with your own.](#4-replace-all-placeholder-text-with-your-own)
+  - [5. Customize Hero category list](#5-customize-hero-category-list)
 - [Form Submission](#form-submission)
 - [Roadmap](#roadmap)
+- [FAQs](#faqs)
+  - [How do I change the Hero categories?](#how-do-i-change-the-hero-categories)
+  - [Do the names of the folders in `/content` mean anything?](#do-the-names-of-the-folders-in-content-mean-anything)
+  - [How do I change the GraphQL queries?](#how-do-i-change-the-graphql-queries)
+  - [Why are there so many warnings when I run Revista locally?](#why-are-there-so-many-warnings-when-i-run-revista-locally)
 - [Usage](#usage)
 - [License](#license)
 - [Usage Agreement](#usage-agreement)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
 
-
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Revista Screen Shot][opened-ed-screenshot]](https://opened.one)
-
-View live site: https://revista.mesmerdesign.ca/
-
-## pagespeed.web.dev Results
-
-[![Lighthouse][lighthouse-screenshot]](https://pagespeed.web.dev/report?url=https%3A%2F%2Frevista.mesmerdesign.ca%2F&form_factor=mobile)
-
-
 
 Revista is an MIT licensed open-source magazine/blog template, built using React and Gatsby.
 
@@ -79,11 +68,11 @@ We've listed in customization instruction in [How to Customize](#how-to-customiz
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+## Built With
 
-* [![React][React.js]][React-url]
-* [![Gatsby][Gatsbyjs.com]][Gatsbyjs-url]
-* [![Markdown][Markdown]][Markdown-url]
+- [![React][react.js]][react-url]
+- [![Gatsby][gatsbyjs.com]][gatsbyjs-url]
+- [![Markdown][markdown]][markdown-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +104,7 @@ npm i
 npm run start
 # You might get an error as we use yarn. If you do:
 # 1. Delete yarn.lock
-# 2. Delete node_modules if it exists, otherwise ignore 
+# 2. Delete node_modules if it exists, otherwise ignore
 # 3. Open package.json and modify scripts to use npm instead of yarn
 # 4. Run above commands again
 ```
@@ -124,7 +113,7 @@ Wait, there's more..
 
 3. (optional) Look at structure and articles in `/content` to understand what metadata to include in your articles.
 4. Delete ALL content in `/content` except the `/content/template` folder
-5. Place your articles in `/content` with the required metadata (see any existing `.md` file in `/content` for an example) 
+5. Place your articles in `/content` with the required metadata (see any existing `.md` file in `/content` for an example)
 
 ## Guide to Article Metadata
 
@@ -152,9 +141,9 @@ In order to turn Revista into your own blog or magazine, you'll have to make som
 
 ### 1. Modify `gatsby-config.js` to contain your information, not ours
 
-Simply run through `gatsby-config.js` and change settings as needed. In addition to updating metadata to your info, uncomment `gatsby-plugin-robots-txt` and update the paths to your own site. 
+Simply run through `gatsby-config.js` and change settings as needed. In addition to updating metadata to your info, uncomment `gatsby-plugin-robots-txt` and update the paths to your own site.
 
-**Note**: if using the Netlify sitemap plugin, your sitemap will be located at `https://yoursiteurl.com/sitemap.xml` 
+**Note**: if using the Netlify sitemap plugin, your sitemap will be located at `https://yoursiteurl.com/sitemap.xml`
 
 ### 2. Enable Netlify Forms (optional)
 
@@ -166,7 +155,7 @@ Note that if your icon is not close to 1:1 size, you may see display errors. Kee
 
 ### 4. Replace all placeholder text with your own.
 
-All pages are in `/src/pages`. 
+All pages are in `/src/pages`.
 
 Article template and category page template are in `/src/templates`.
 
@@ -186,9 +175,17 @@ Pages/Components with text that you will need to update:
 
 **Note**: All main pages are linked to from the Navbar, so we recommend going page-by-page to look for text that needs updating. All components with text that needs updating will either be in `src/pages/` or `src/components/`
 
+### 5. Customize Hero category list
+
+The categories in the Hero section are NOT autogenerated - `/src/components/utils/heroCategories.jsx`
+
+We decided it was easier this way, since you can decide on specific colors for certain categories, and choose your **Main categories**.
+
+However, the Categories page is autogenerated, and the categories list in the sidebar is autogenerated as well. If you'd like your Hero to autogenerate categories, simply copy one of those GraphQL queries and adjust accordingly.
+
 ## Form Submission
 
-**Note**: We've decided to change to Netlify Forms for simplicity. 
+**Note**: We've decided to change to Netlify Forms for simplicity.
 
 If you are using Netlify, this will already be set up for you. Ensure to read their docs to understand how Netlify Forms work.
 
@@ -196,13 +193,14 @@ Leaving this here in case we decide to change back to StaticForms.
 
 ---
 
-[StaticForms](https://www.staticforms.xyz/) and [Gatsby Environment Variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/). With the current code as-is, you may get an error when building. 
+[StaticForms](https://www.staticforms.xyz/) and [Gatsby Environment Variables](https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/). With the current code as-is, you may get an error when building.
 
 You will have to
 
 1. Set up your contact form, if you plan to use it.
 2. Get an API key from [StaticForms](https://www.staticforms.xyz/).
 3. Create the following:
+
 ```bash
 # .env
 STATIC_FORMS_KEY=YOUR_KEY
@@ -210,10 +208,10 @@ STATIC_FORMS_KEY=YOUR_KEY
 
 If using Netlify, add your API key to the Netlify app as well.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
 - [x] Convert opened.one to Revista template
@@ -228,17 +226,48 @@ See the [open issues](https://github.com/chrisnmorrison/revista-gatsby-blog-maga
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## FAQs
 
-<!-- USAGE EXAMPLES -->
+### How do I change the Hero categories?
+
+Navigate to - `/src/components/utils/heroCategories.jsx`
+
+Currently, the Hero categories are hard-coded. We decided it was easier this way, since you can decide on specific colors for certain categories, and choose your **Main categories**.
+
+However, the Categories page is autogenerated, and the categories list in the sidebar is autogenerated as well. If you'd like your Hero to autogenerate categories, simply copy one of those GraphQL queries and adjust accordingly.
+
+### Do the names of the folders in `/content` mean anything?
+
+They mean nothing to the generated site. They are only for personal organization. GraphQL only retrieves `.md` or `.mdx` files, and does not store the folder structure.
+
+### How do I change the GraphQL queries?
+
+Most queries are located alongside the elements they belong to. I.e. `post-template.jsx` contains the GraphQL query to get post data.
+
+Once your site is running locally, navigate to http://localhost:8000/\_\_\_graphql to test and build queries. This will be printed in your console well for easy nativation.
+
+You may prefer to store them all in a separate file, but we like to keep everything organized together.
+
+### Why are there so many warnings when I run Revista locally?
+
+Most of these warnings are easy to remove - they are `<a>` tags with a placeholder `href`, or they are unused imports or GraphQL queries. Everything will still compile and run perfectly fine, and I decided to leave those warnings there since you may have a use for them. I.e. the unused GraphQL imports.
+
+You can address these warnings without any issues.
+
+One warning has to do with CSS modules. This is on the list of to-do's, and will also not affect compilation or local development.
+
+<!-- USAGE -->
+
 ## Usage
 
 Revista is a Markdown + Gatsby blog/magazine starter, and can be hosted for free on sites like Netlify. I'm proud of my design, and i'd love to see other sites using it.
 
-You're welcome to fork Revista and use it for your own site. You are not required to publish your code, you are only required to give credit (per MIT license). 
+You're welcome to fork Revista and use it for your own site. You are not required to publish your code, you are only required to give credit (per MIT license).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## License
 
 [![AGPL License][license-shield]][license-url]
@@ -255,41 +284,35 @@ By forking our repository and using it for your own purposes, we require two thi
 
 **2. You must delete all content in the `/content` folder**
 
-We've left some old files there so that you can see how to structure the `.md` article files.
-
+We've left some old files there so that you can see how to structure the `.md` article file metadata. After you understand it, we recommend keeping the template (and adjusting to your needs), and removing all other files. You probably don't want placeholder files on your live site :)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Chris (primary maintainer) - mesmerdesignca@gmail.com
-
-Chris' Web Development Company - <a href='https://mesmerdesign.ca' target='_blank' rel='noopener noreferrer'>Mesmer Design</a>
 
 Project Link: [https://github.com/chrisnmorrison/revista-gatsby-blog-magazine](https://github.com/chrisnmorrison/revista-gatsby-blog-magazine)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ACKNOWLEDGMENTS -->
+
 ## Acknowledgments
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [Img Shields](https://shields.io)
-* [Netlify](https://www.netlify.com/)
-* [Gatsby](https://www.gatsbyjs.com/)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+- [Choose an Open Source License](https://choosealicense.com)
+- [Img Shields](https://shields.io)
+- [Netlify](https://www.netlify.com/)
+- [Gatsby](https://www.gatsbyjs.com/)
+- [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
 [contributors-url]: https://github.com/chrisnmorrison/revista-gatsby-blog-magazine/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/chrisnmorrison/revista-gatsby-blog-magazine.svg?style=for-the-badge
@@ -303,22 +326,21 @@ Project Link: [https://github.com/chrisnmorrison/revista-gatsby-blog-magazine](h
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/chris-morrison-180072/
 [opened-ed-screenshot]: src/assets/landing-screenshot.jpeg
-[lighthouse-screenshot]: src/assets/lighthouse.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[Markdown]: https://img.shields.io/badge/Markdown-4A525A?style=for-the-badge&logo=markdown&logoColor=white
-[Markdown-url]: https://daringfireball.net/projects/markdown/
-[Gatsbyjs.com]: https://img.shields.io/badge/gatsby-643194?style=for-the-badge&logo=gatsby&logoColor=white
-[Gatsbyjs-url]: https://www.gatsbyjs.com/
+[next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[next-url]: https://nextjs.org/
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+[vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[vue-url]: https://vuejs.org/
+[angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[angular-url]: https://angular.io/
+[svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[svelte-url]: https://svelte.dev/
+[laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[laravel-url]: https://laravel.com
+[bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[bootstrap-url]: https://getbootstrap.com
+[markdown]: https://img.shields.io/badge/Markdown-4A525A?style=for-the-badge&logo=markdown&logoColor=white
+[markdown-url]: https://daringfireball.net/projects/markdown/
+[gatsbyjs.com]: https://img.shields.io/badge/gatsby-643194?style=for-the-badge&logo=gatsby&logoColor=white
+[gatsbyjs-url]: https://www.gatsbyjs.com/

@@ -57,11 +57,11 @@ const Support = () => {
                     your donations go to maintaining Revista, as well as the
                     other education promoting services that Chris created, like{' '}
                     <a
-                      href="https://opened.one"
+                      href="https://openmastery.one"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Open Ed
+                      Open Mastery
                     </a>
                     .
                   </p>
@@ -130,7 +130,7 @@ const Support = () => {
                 <div>
                   <h2 className="support-title">Share us with the world</h2>
                   <p>
-                    Who doesn't like free learning? If you like our work, share
+                    Who doesn't like free stuff? If you like our work, share
                     our articles with your friends, family, on Reddit, or
                     anywhere else. This is the easiest way to support us!
                   </p>

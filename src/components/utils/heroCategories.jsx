@@ -15,6 +15,7 @@ export const categories = [
   { category: 'All Categories', color: '#c9c4ff' },
 ]
 
+
 export const getColor = (whatCategory) => {
   const index = categories.find(element => element.category.toUpperCase() === whatCategory.toUpperCase())
 
