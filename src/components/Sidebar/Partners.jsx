@@ -8,10 +8,10 @@ import './sidebar-styles.scss'
 
 const partners = [
   {
-    name: 'Open Ed',
+    name: 'Other site',
     logo: '',
-    logoAlt: 'Logo for Open Ed',
-    url: 'https://opened.one',
+    logoAlt: 'Logo for other site',
+    url: 'https://example.com',
   },
   //
   // {
