@@ -60,7 +60,7 @@
 
 Revista is an MIT licensed open-source magazine/blog template, built using React and Gatsby.
 
-**FYI**: If you were a user of https://opened.one (no longer in use) or , be aware that we've moved all of our old articles to the Open Mastery blog (https://openmastery.one), which contains text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
+**FYI**: If you were a user of https://opened.one (no longer in use), be aware that we've moved all of our old articles to the Open Mastery blog (https://openmastery.one), which contains free and open-source text-based courses. If this doesn't sound familiar to you, don't worry about it 😊 Essentially, we converted our old site into this Gatsby template for all to use.
 
 At the moment, Revista is a very opinionated template. We originally made specific changes to suit our interests and needs, and now that we are open-sourcing our template, some of these opinionated choices remain.
 
